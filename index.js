@@ -4,7 +4,7 @@ window.onload = () => {
     setTimeout(() => {
       window.scroll({ top: 0, behavior: "smooth" });
     }, 850);
-  }, 1000);
+  }, 500);
 };
 
 let card1 = document.getElementById("card-1");
