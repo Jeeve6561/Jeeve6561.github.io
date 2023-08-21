@@ -58,6 +58,9 @@ body::-webkit-scrollbar {
 .grid-card {
   margin-top: 5vh;
   margin-left: 1.8vw;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: justify;
   background: radial-gradient(circle, #ff8b28, #bf5700);
   border-radius: 1rem;
   width: 30vw;
@@ -68,10 +71,25 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 
+.larger-font {
+    font-size: 3rem;
+}
+
+.smaller-font {
+    font-size: 0.8rem;
+}
+
 h1 {
   font-family: "MuseoModerno", cursive;
   color: black;
-  font-size: 3rem;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  color: black;
+  font-size: 1rem;
   padding: 0;
   margin: 0;
 }
