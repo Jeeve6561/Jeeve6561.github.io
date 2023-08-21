@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&family=Teko:wght@300&display=swap");
+
+*,
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Teko", sans-serif;
+  font-size: 2rem;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.top-bar {
+  background: linear-gradient(#333, #555);
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-button {
+  font-size: 1rem;
+}
+
+.top-card {
+  background: radial-gradient(circle, #777, #333);
+  height: 93vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.full-card {
+  background: radial-gradient(circle, #777, #333);
+  height: 100vh;
+  width: 100vw;
+}
+
+#second-card {
+  background: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/57/18/5a/view-of-maracas-bay-from.jpg?w=1200&h=-1&s=1);
+  background-size: cover;
+  font-size: 0.8rem;
+}
+
+#third-card {
+  font-size: 0.8rem;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-card {
+  margin-top: 5vh;
+  margin-left: 1.8vw;
+  background: radial-gradient(circle, #ff8b28, #bf5700);
+  border-radius: 1rem;
+  width: 30vw;
+  height: 40vh;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  font-family: "MuseoModerno", cursive;
+  color: black;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.3rem;
+  padding-left: 5vw;
+}
+
+.fade-in-out {
+  opacity: 0;
+  animation: fade-in 1s ease-in forwards;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.05);
+  /* transform: translateX(100%); */
+}
