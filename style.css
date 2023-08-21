@@ -86,6 +86,11 @@ h3 {
   animation: fade-in 1s ease-in forwards;
 }
 
+.fade-in-card {
+  opacity: 0;
+  animation: fade-in 2s ease-in forwards;
+}
+
 @keyframes fade-in {
   100% {
     opacity: 1;
