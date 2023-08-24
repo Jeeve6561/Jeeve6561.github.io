@@ -8,14 +8,18 @@
   </head>
   <body>
     <header class="top-bar">
-      <a href="/index.html"><h1 class="nav-button">About</h1></a>
-      <a><h1 class="nav-button">Projects</h1></a>
-      <a><h1 class="nav-button">Achievements</h1></a>
-      <a><h1 class="nav-button">Contact</h1></a>
+      <h1 class="nav-button" onclick="ScrollToElem('second-card')">About</h1>
+      <h1 class="nav-button" onclick="ScrollToElem('third-card')">
+        Experience
+      </h1>
+      <h1 class="nav-button" onclick="ScrollToElem('fourth-card')">Projects</h1>
+      <h1 class="nav-button" onclick="ScrollToElem('fifth-card')">Contact</h1>
     </header>
-    <section class="fade-in-out top-card">
+    <section class="fade-in-card top-card">
       <h1 class="center larger-font">Jeeve Mahadeo</h1>
-      <h2 class="center larger-font">An MIT educated software developer</h2>
+      <h2 class="center fade-in-delay larger-font">
+        An MIT educated software developer
+      </h2>
     </section>
     <section class="full-card" id="second-card">
       <h3>Coming from the Caribbean island of Trinidad,</h3>
@@ -83,8 +87,12 @@
             <li class="smaller-font">Brief Intro to Python</li>
             <li class="smaller-font">Intro to CS Programming in Python</li>
             <li class="smaller-font">Intro to MATLAB</li>
-            <li class="smaller-font">Intro to Algorithms and Data Structures</li>
-            <li class="smaller-font">Computational Thinking and Data Science</li>
+            <li class="smaller-font">
+              Intro to Algorithms and Data Structures
+            </li>
+            <li class="smaller-font">
+              Computational Thinking and Data Science
+            </li>
             <li class="smaller-font">Fundamentals of Programming</li>
             <li class="smaller-font">Intro to Machine Learning</li>
           </ul>

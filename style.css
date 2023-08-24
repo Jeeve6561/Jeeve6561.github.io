@@ -7,10 +7,26 @@ body {
   margin: 0px;
   font-family: "Teko", sans-serif;
   font-size: 2rem;
+  background-color: #333;
+  overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  width: 0.4rem;
+  z-index: 1;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bf5700;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff8b28;
 }
 
 .top-bar {
@@ -24,6 +40,8 @@ body::-webkit-scrollbar {
 
 .nav-button {
   font-size: 1rem;
+  background: none;
+  cursor: pointer;
 }
 
 .top-card {
@@ -39,18 +57,20 @@ body::-webkit-scrollbar {
   background: radial-gradient(circle, #777, #333);
   height: 100vh;
   width: 100vw;
+  font-size: 0.8rem;
 }
 
 #second-card {
   background: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/57/18/5a/view-of-maracas-bay-from.jpg?w=1200&h=-1&s=1);
   background-size: cover;
-  font-size: 0.8rem;
+}
+
+#caribbean-card {
+  background: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/57/18/5a/view-of-maracas-bay-from.jpg?w=1200&h=-1&s=1);
+  background-size: cover;
 }
 
 #third-card {
-  font-size: 0.8rem;
-  height: 100vh;
-  width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -69,14 +89,17 @@ body::-webkit-scrollbar {
 
 .center {
   text-align: center;
+  background: none;
 }
 
 .larger-font {
-    font-size: 3rem;
+  font-size: 3rem;
+  background: none;
 }
 
 .smaller-font {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
+  background: none;
 }
 
 h1 {
@@ -85,6 +108,7 @@ h1 {
   font-size: 1rem;
   padding: 0;
   margin: 0;
+  background: none;
 }
 
 h2 {
@@ -92,16 +116,21 @@ h2 {
   font-size: 1rem;
   padding: 0;
   margin: 0;
+  background: none;
 }
 
 h3 {
   font-size: 1.3rem;
   padding-left: 5vw;
+  background: none;
 }
 
-.fade-in-out {
-  opacity: 0;
-  animation: fade-in 1s ease-in forwards;
+ul {
+  background: none;
+}
+
+li {
+  background: none;
 }
 
 .fade-in-card {
@@ -109,18 +138,20 @@ h3 {
   animation: fade-in 2s ease-in forwards;
 }
 
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-  }
+.fade-in-delay {
+  opacity: 0;
+  animation: fade-in 1.5s ease-in 1s forwards;
 }
 
-@keyframes fade-out {
+@keyframes fade-in {
   0% {
-    opacity: 1;
-  }
-  100% {
     opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -130,5 +161,4 @@ h3 {
 
 .grow:hover {
   transform: scale(1.05);
-  /* transform: translateX(100%); */
 }

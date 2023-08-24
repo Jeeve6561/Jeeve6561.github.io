@@ -1,10 +1,5 @@
-window.onload = () => {
-  setTimeout(() => {
-    window.scroll({ top: 100, behavior: "smooth" });
-    setTimeout(() => {
-      window.scroll({ top: 0, behavior: "smooth" });
-    }, 850);
-  }, 500);
+window.onbeforeunload = () => {
+  window.scrollTo(0, 0);
 };
 
 let card1 = document.getElementById("card-1");
@@ -54,3 +49,8 @@ document.addEventListener("scroll", () => {
     card6.classList.add("fade-in-card");
   }
 });
+
+function ScrollToElem(id) {
+  let elem = document.getElementById(id);
+  elem.scrollTo(0,0);
+}
