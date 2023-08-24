@@ -210,3 +210,7 @@ li {
 .grow:hover {
   transform: scale(1.05);
 }
+
+.flip {
+  transform: rotateY('180deg');
+}
