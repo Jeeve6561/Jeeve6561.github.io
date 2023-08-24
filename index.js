@@ -15,6 +15,18 @@ let card5Loaded = false;
 let card6 = document.getElementById("card-6");
 let card6Loaded = false;
 
+let Projects = {
+  DefaultScreen: document.getElementById("DefaultScreen"),
+  AudioProcessor: document.getElementById("AudioProcessor"),
+  ImageProcessor: document.getElementById("ImageProcessor"),
+  SATSolver: document.getElementById("SATSolver"),
+  Minesweeper: document.getElementById("Minesweeper"),
+  PathFindingVisualizer: document.getElementById("PathFindingVisualizer"),
+  GoogleMapsClone: document.getElementById("GoogleMapsClone"),
+};
+let CurrentProject = "DefaultScreen";
+SetProject(CurrentProject);
+
 function CheckIsInView(element) {
   let rect = element.getBoundingClientRect();
   if (rect.top < window.innerHeight && rect.bottom >= 0) {
@@ -52,5 +64,11 @@ document.addEventListener("scroll", () => {
 
 function ScrollToElem(id) {
   let elem = document.getElementById(id);
-  elem.scrollTo(0,0);
+  elem.scrollIntoView({behavior: 'smooth'});
+}
+
+function SetProject(project) {
+  Projects[CurrentProject].style.display = "none";
+  Projects[project].style.display = "block";
+  CurrentProject = project;
 }
