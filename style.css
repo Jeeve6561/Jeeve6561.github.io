@@ -85,6 +85,15 @@ body {
   height: 82vh;
 }
 
+.contact {
+  text-align: justify;
+  background: radial-gradient(circle, #ff8b28, #bf5700);
+  border-radius: 1rem;
+  margin: 5vh 5vw;
+  width: 90vw;
+  height: 90vh;
+}
+
 .grid-card {
   margin-top: 5vh;
   margin-left: 1.8vw;
@@ -170,6 +179,23 @@ h2 {
 h3 {
   font-size: 1.3rem;
   padding-left: 5vw;
+  background: none;
+}
+
+h4 {
+  font-size: 1.5rem;
+  padding: 0;
+  padding-left: 1rem;
+  margin: 0;
+  background: none;
+}
+
+.contact-list {
+  color: black;
+  font-size: 1.5rem;
+  padding: 0;
+  padding-left: 1rem;
+  margin: 0;
   background: none;
 }
 
