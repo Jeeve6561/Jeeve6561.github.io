@@ -172,6 +172,20 @@ body {
   width: 65%;
 }
 
+#pathfinding {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+#pathfindingtext {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
 .center {
   text-align: center;
   background: none;

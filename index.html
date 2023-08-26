@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeeve Mahadeo Resume</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pathfindingvisualizer.css" />
   </head>
   <body>
     <header class="top-bar">
@@ -364,6 +365,65 @@
       </div>
       <div class="project-content grow" id="PathFindingVisualizer">
         <h1 class="larger-font center">This is the Path Finding Visualizer</h1>
+        <div class="no-background" id="pathfinding">
+          <div class="no-background" id="pathfindingtext">
+            <p class="large-font">
+              This project can be viewed on
+              <a href="https://github.com/Jeeve6561/PathFinding"
+                >my github here</a
+              >.
+            </p>
+            <p class="large-font">
+              This project takes Dijkstra's algorithm and creates a visualizer
+              for it.
+            </p>
+            <p class="large-font">
+              This is done fully in Javascript and a replica is posted here:
+            </p>
+            <p class="large-font">
+              Use the controls below to change the grid on the right hand side.
+            </p>
+            <div id="settings">
+              <label class="large-font">Set Attribute:</label>
+              <button
+                class="large-font"
+                id="start"
+                onclick="ChangeSetting('start')"
+              >
+                Start
+              </button>
+              <button
+                class="large-font"
+                id="end"
+                onclick="ChangeSetting('end')"
+              >
+                End
+              </button>
+              <button
+                class="large-font"
+                id="wall"
+                onclick="ChangeSetting('wall')"
+              >
+                Wall
+              </button>
+              <button class="large-font" id="done" onclick="DoneWithSettings()">
+                Done
+              </button>
+              <button class="large-font" id="resetgrid" onclick="ResetGrid()">
+                Reset Grid
+              </button>
+              <button
+                class="large-font"
+                id="startsearch"
+                onclick="StartSearch()"
+              >
+                Start Search
+              </button>
+            </div>
+          </div>
+          <div id="graph"></div>
+          <script src="pathfindingvisualizer.js"></script>
+        </div>
       </div>
       <div class="flip-cards-nav">
         <div
