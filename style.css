@@ -137,6 +137,22 @@ body {
   width: 100%;
 }
 
+.imagerow2 {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#images-columns {
+  background: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90vw;
+  margin: 0rem 3vw;
+}
+
 #python {
   width: 100%;
   border-radius: 1rem;
@@ -150,6 +166,10 @@ body {
 #javascript {
   width: 100%;
   border-radius: 1rem;
+}
+
+.picture {
+  width: 65%;
 }
 
 .center {
@@ -174,6 +194,10 @@ body {
 
 .smaller-font {
   font-size: 0.8rem;
+  background: none;
+}
+
+.no-background {
   background: none;
 }
 
