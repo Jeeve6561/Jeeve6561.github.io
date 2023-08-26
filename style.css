@@ -60,6 +60,10 @@ body {
   font-size: 0.8rem;
 }
 
+.description {
+  max-width: 50%;
+}
+
 #second-card {
   display: flex;
   flex-direction: row;
@@ -259,7 +263,12 @@ p {
   text-align: center;
   margin: 0px auto;
   background: none;
-  max-width: 50%;
+}
+
+audio {
+  height: 1rem;
+  width: 5rem;
+  border-radius: 1rem;
 }
 
 .contact-list {
