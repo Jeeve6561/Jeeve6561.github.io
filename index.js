@@ -19,10 +19,7 @@ let Projects = {
   DefaultScreen: document.getElementById("DefaultScreen"),
   AudioProcessor: document.getElementById("AudioProcessor"),
   ImageProcessor: document.getElementById("ImageProcessor"),
-  SATSolver: document.getElementById("SATSolver"),
-  Minesweeper: document.getElementById("Minesweeper"),
   PathFindingVisualizer: document.getElementById("PathFindingVisualizer"),
-  GoogleMapsClone: document.getElementById("GoogleMapsClone"),
 };
 let CurrentProject = "DefaultScreen";
 SetProject(CurrentProject);

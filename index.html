@@ -16,15 +16,87 @@
       <h1 class="nav-button" onclick="ScrollToElem('fifth-card')">Contact</h1>
     </header>
     <section class="fade-in-card top-card">
-      <h1 class="center larger-font">Jeeve Mahadeo</h1>
+      <h1 class="center larger-font">Sanjeev "Jeeve" Mahadeo</h1>
       <h2 class="center fade-in-delay larger-font">
         An MIT educated software developer
       </h2>
+      <p class="fade-in-delay">
+        I am a junior software (and web) developer who is eager to soak in
+        knowledge, and views all life experiences as an opportunity to learn and
+        grow!
+      </p>
     </section>
     <section class="full-card" id="second-card">
-      <h3>Coming from the Caribbean island of Trinidad,</h3>
-      <h3>Jeeve has made several strides in their life</h3>
-      <h3>to become the best developer they can be</h3>
+      <div class="about-card grow" id="caribbean-card">
+        <h5 class="small-font">
+          Born and raised in the multicultural Caribbean Island of Trinidad, I
+          get along well with persons of all backgrounds. I love learning about
+          new cultures, languages, histories, and peoples from across the globe.
+          Simply put, I make friends easily :)
+        </h5>
+        <img
+          id="maracas"
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/57/18/5a/view-of-maracas-bay-from.jpg?w=1200&h=-1&s=1"
+        />
+      </div>
+      <div class="about-card grow">
+        <h5 class="small-font">
+          I have a history of excelling at whatever I put my mind to: from
+          attending #1 schools like
+          <a href="https://naparimacollege.org/welcome-to-naparima-college/"
+            >Naparima College</a
+          >
+          and
+          <a
+            href="https://news.mit.edu/2023/qs-ranks-mit-1-university-23-24-0627"
+            >MIT</a
+          >, to
+          <a href="https://www.cxc.org/merit-lists/"
+            >meriting in the Caribbean</a
+          >
+          in both my O'Level and A'Level exams, to
+          <a
+            href="https://tt.loopnews.com/content/naps-boy-represents-tt-math-olympiad-competition-brazil"
+            >representing my country</a
+          >
+          at the International Mathematical Olympiad and
+          <a href="https://www.imo-official.org/participant_r.aspx?id=26801"
+            >receiving Honorable Mentions each time</a
+          >, to even being a
+          <a href="https://napcol.bluechiptt.com/scholarships-2018/"
+            >National Open Scholar from Trinidad and Tobago in the field of
+            Mathematics</a
+          >.
+        </h5>
+      </div>
+      <div class="about-card grow" id="coding-card">
+        <h5 class="small-font">
+          I began my coding journey in my final year of high school, equipping
+          me with 6 years worth of experience with programming knowledge. I am
+          particularly skilled in <a href="https://www.python.org/">Python</a>, <a href="https://go.dev/">Golang</a>, <a href="https://html.com/">HTML</a>, <a href=https://en.wikipedia.org/wiki/CSS">CSS</a>, <a href="https://www.javascript.com/">Javascript</a>, and <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/">C#</a>.
+          I have an intimate knowledge with <a href="https://github.com/">Git</a> (through Github) and also have
+          worked with the <a href="https://unity.com/">Unity</a> Physics Engine at a past internship.
+        </h5>
+        <div id="imagerow">
+          <img
+            id="python"
+            src="https://miro.medium.com/v2/resize:fit:1400/1*m0H6-tUbW6grMlezlb52yw.png"
+          />
+          <img
+            id="golang"
+            src="https://miro.medium.com/v2/resize:fit:1400/1*Ifpd_HtDiK9u6h68SZgNuA.png"
+          />
+          <img
+            id="javascript"
+            src="https://1.bp.blogspot.com/-pdqcVeIQp64/XDX7TzdRdcI/AAAAAAAAM8E/ZmGuB6caZqIGmEflGHcj3zgXJJrmqRLdgCLcBGAs/w1200-h630-p-k-no-nu/Free%2BCourses%2Bto%2Blearn%2BJavaScript.jpg"
+          />
+        </div>
+      </div>
+      <div class="about-card grow">
+        <h5 class="small-font">
+          I am also a <a href="https://pleasure.mit.edu/">PLEASURE</a> Educator, meaning I have skills in conflict resolution and I am trained in topics such as: effective communication, safer sex practices, healthy relationships, boundaries and consent, Diversity-Equity-Inclusion (DEI), gender and sexuality, minoritized and marginalized identities, mental health, and culture changing. I am a huge advocate for people of marginalized statuses and, in whatever situation I am in, I aspire to make the world a better and more inclusive environment for ALL.
+        </h5>
+      </div>
     </section>
     <section class="full-card" id="third-card">
       <div class="grid-card grow" id="card-1">
@@ -134,17 +206,8 @@
       <div class="project-content grow" id="ImageProcessor">
         This is the ImageProcessor
       </div>
-      <div class="project-content grow" id="SATSolver">
-        This is the SATSolver
-      </div>
-      <div class="project-content grow" id="Minesweeper">
-        This is the Minesweeper
-      </div>
       <div class="project-content grow" id="PathFindingVisualizer">
         This is the PathFindingVisualizer
-      </div>
-      <div class="project-content grow" id="GoogleMapsClone">
-        This is the GoogleMapsClone
       </div>
       <div class="flip-cards-nav">
         <div
@@ -161,27 +224,9 @@
         </div>
         <div
           class="flip-card smaller-font grow"
-          onclick="SetProject('SATSolver')"
-        >
-          SAT Solver
-        </div>
-        <div
-          class="flip-card smaller-font grow"
-          onclick="SetProject('Minesweeper')"
-        >
-          Minesweeper
-        </div>
-        <div
-          class="flip-card smaller-font grow"
           onclick="SetProject('PathFindingVisualizer')"
         >
           Path Finding Visualizer
-        </div>
-        <div
-          class="flip-card smaller-font grow"
-          onclick="SetProject('GoogleMapsClone')"
-        >
-          Google Maps Clone
         </div>
       </div>
     </section>
@@ -190,8 +235,12 @@
         <h1 class="larger-font center">Hire Me!</h1>
         <h4>You can contact me via the following methods:</h4>
         <ul>
-          <a href="mailto:sanjeev.mahadeo@hotmail.com,smahadeo@mit.edu"><li class="contact-list">Email me at sanjeev.mahadeo@hotmail.com</li>
-          <li class="contact-list">Email me at smahadeo@mit.edu</li></a>
+          <a href="mailto:sanjeev.mahadeo@hotmail.com,smahadeo@mit.edu"
+            ><li class="contact-list">
+              Email me at sanjeev.mahadeo@hotmail.com
+            </li>
+            <li class="contact-list">Email me at smahadeo@mit.edu</li></a
+          >
           <li class="contact-list">Call me at 868-702-3376</li>
           <li class="contact-list">Whatsapp me at 868-702-3376</li>
         </ul>

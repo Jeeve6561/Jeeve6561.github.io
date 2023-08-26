@@ -61,13 +61,9 @@ body {
 }
 
 #second-card {
-  background: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/57/18/5a/view-of-maracas-bay-from.jpg?w=1200&h=-1&s=1);
-  background-size: cover;
-}
-
-#caribbean-card {
-  background: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/57/18/5a/view-of-maracas-bay-from.jpg?w=1200&h=-1&s=1);
-  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #third-card {
@@ -106,6 +102,52 @@ body {
   height: 40vh;
 }
 
+.about-card {
+  background: radial-gradient(circle, #ff8b28, #bf5700);
+  border-radius: 1rem;
+  margin: auto;
+  max-width: 45vw;
+  min-width: 30vw;
+  height: auto;
+}
+
+#caribbean-card {
+  display: flex;
+  flex-direction: row;
+}
+
+#maracas {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#coding-card {
+  display: flex;
+  flex-direction: row;
+}
+
+#imagerow {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#python {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#golang {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#javascript {
+  width: 100%;
+  border-radius: 1rem;
+}
+
 .center {
   text-align: center;
   background: none;
@@ -114,6 +156,10 @@ body {
 .larger-font {
   font-size: 3rem;
   background: none;
+}
+
+.small-font {
+  font-size: 0.9rem;
 }
 
 .smaller-font {
@@ -159,6 +205,12 @@ body {
   background-color: #ff8b28;
 }
 
+a {
+  background: none;
+  font-size: inherit;
+  color: inherit;
+}
+
 h1 {
   font-family: "MuseoModerno", cursive;
   color: black;
@@ -188,6 +240,20 @@ h4 {
   padding-left: 1rem;
   margin: 0;
   background: none;
+}
+
+h5 {
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  background: none;
+}
+
+p {
+  text-align: center;
+  margin: 0px auto;
+  background: none;
+  max-width: 50%;
 }
 
 .contact-list {
@@ -238,5 +304,5 @@ li {
 }
 
 .flip {
-  transform: rotateY('180deg');
+  transform: rotateY("180deg");
 }
